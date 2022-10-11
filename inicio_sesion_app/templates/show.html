@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='static/css/estilo.css') }}">
+    <title>Mostrar un Usuario</title>
+</head>
+<body>
+    <h1 class="text-center">Welcome {{id_usuario.fname}}</h1>
+    <div class="text-center">
+        <form action="/logout" class="text-center">
+            <button class="col-1 mx-auto my-2 shadow-lg p-3 mb-5 bg-body rounded" type="submit">Logout</button> 
+        </form> 
+    </div>
+</body>
+</html>
